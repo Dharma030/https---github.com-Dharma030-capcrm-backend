@@ -16,7 +16,7 @@ connectDB();
 
 app.get("/", (req, res) => {
   res.json({
-    message: "Welcome to CRM Backend App API created By Dharma Full Stack Developer",
+    message: "Welcome to CRM Backend App created By DharmaWebDev",
   });
 });
 

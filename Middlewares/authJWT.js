@@ -5,7 +5,7 @@ const User = require('../Models/user');
 const verifyToken = (req, res, next) => {
   const tokenHeaderKey = process.env.TOKEN_HEADER_KEY;
   let token = req.headers["x-access-token"];
-console.log(req.headers)
+  
   if (!token) {
     return res.status(403).send({ message: 'No Token Provided' });
   }
